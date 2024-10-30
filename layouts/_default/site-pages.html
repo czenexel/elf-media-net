@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+   {{ partial "head" . }}
+      <body class="wf">
+        {{ partial "gtm-body-script" . }}
+         <div class="w-embed">
+            <style>
+               *{word-break:break-word}@media screen and (min-width:3000px){._wf-layout-content-wrapper{width:30%}._wf-layout-footer-wrapper{width:20%}}@media screen and (max-width:2999px) and (min-width:2500px){._wf-layout-content-wrapper{width:35%}._wf-layout-footer-wrapper{width:25%}}@media screen and (max-width:2499px) and (min-width:2000px){._wf-layout-content-wrapper{width:40%}._wf-layout-footer-wrapper{width:30%}}@media screen and (max-width:1999px) and (min-width:1800px){._wf-layout-content-wrapper{width:45%}._wf-layout-footer-wrapper{width:35%}}@media screen and (max-width:1799px) and (min-width:1700px){._wf-layout-content-wrapper{width:50%}._wf-layout-footer-wrapper{width:40%}}@media screen and (max-width:1699px) and (min-width:1600px){._wf-layout-content-wrapper{width:55%}._wf-layout-footer-wrapper{width:45%}}@media screen and (max-width:1599px) and (min-width:1500px){._wf-layout-content-wrapper{width:60%}._wf-layout-footer-wrapper{width:50%}}@media screen and (max-width:1199px) and (min-width:1100px){._wf-layout-content-wrapper{width:75%}._wf-layout-footer-wrapper{width:60%}}@media screen and (max-width:1099px) and (min-width:1000px){._wf-layout-content-wrapper{width:80%}._wf-layout-footer-wrapper{width:65%}}@media screen and (max-width:400px){.cta-btn{width:100%}}@media screen and (max-width:320px){.cta-btn{font-size:12px}}.cta-td-none{text-decoration:none!important}
+            </style>
+         </div>
+         <header>
+            {{ partial "header" . }}
+         </header>
+         <main>
+            <div class="_wf-layout-content">
+               <div class="_wf-layout-content-wrapper">
+                  <div class="_wf-layout-main-content">
+                     <h2 class="heading-10"><strong>{{ .Title }}</strong></h2>
+                     {{ .Content }}
+                  </div>
+               </div>
+            </div>
+         </main>
+         {{ partial "footer" . }}
+         <div class="w-embed">
+            <style>
+               @media screen and (max-width:5000px){.par-v4-body-wrapper{width:20%}}@media screen and (max-width:3500px){.par-v4-body-wrapper{width:25%}}@media screen and (max-width:3000px){.par-v4-body-wrapper{width:30%}}@media screen and (max-width:2600px){.par-v4-body-wrapper{width:35%}}@media screen and (max-width:2000px){.par-v4-body-wrapper{width:45%}}@media screen and (max-width:1900px){.par-v4-body-wrapper{width:50%}}@media screen and (max-width:1850px){.par-v4-body-wrapper{width:55%}}@media screen and (max-width:1650px){.par-v4-body-wrapper{width:60%}}@media screen and (max-width:1500px){.par-v4-body-wrapper{width:70%}}@media screen and (max-width:991px){.par-v4-body-wrapper{width:100%}}.arrow-down-img{animation:bounce 2s ease infinite}@keyframes bounce{0%,100%,20%,50%,80%{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}.par-v4-cta-box-item{transition:.7s all ease}.par-v4-cta-box-item:hover{background:#ffc700;border-color:#ffc700;box-shadow:none}
+            </style>
+         </div>
+   </body>
+</html>

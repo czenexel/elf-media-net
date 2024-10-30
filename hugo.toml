@@ -1,0 +1,8 @@
+baseURL = 'https://elfmedia.net/'
+languageCode = 'en-US'
+title = 'Elf Media - Performance Marketing'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
